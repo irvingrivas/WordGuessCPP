@@ -6,4 +6,4 @@ project(WordGuess)
 include_directories(headers)
 
 file(GLOB SOURCES "sources/*.cpp")
-add_executable(WordGame ${SOURCES})
+add_executable(WordGuess ${SOURCES})
