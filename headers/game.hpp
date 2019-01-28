@@ -14,7 +14,8 @@ using std::cout;
 using std::cin;
 using std::endl;
 #include "word.hpp"
-#include <time.h>
+#include <cstdlib>
+#include <ctime>
 
 class Game
 {
