@@ -19,10 +19,10 @@ string Word::getWord() const
     return word;
 }
 
-void Word::checkLetters(char c)
+void Word::setLetters(char c)
 {
     for (auto& l : letters)
-        l.checkLetter(c);
+        l.setLetter(c);
 }
 
 string Word::getLetters() const

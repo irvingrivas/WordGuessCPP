@@ -13,7 +13,7 @@ class Letter
 {
     public:
     explicit Letter(char c);
-        void checkLetter(char c);
+        void setLetter(char c);
         char getLetter() const;
     private:
         char letter;

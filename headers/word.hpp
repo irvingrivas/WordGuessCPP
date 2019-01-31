@@ -17,7 +17,7 @@ class Word
 {
     public:
     explicit Word(string randWord);
-        void checkLetters(char c);
+        void setLetters(char c);
         string getLetters() const;
         string getWord() const;
         bool isGuessed() const;

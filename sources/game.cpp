@@ -18,7 +18,7 @@ void Game::play()
         cout << "You have " << numGuesses << " guesses left!" <<
         endl << word.getLetters() << endl << "Please guess a letter!" << endl;
         cin >> guess;
-        word.checkLetters(guess);
+        word.setLetters(guess);
         --numGuesses;
     }
     if (word.isGuessed())

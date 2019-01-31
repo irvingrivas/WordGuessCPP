@@ -10,7 +10,7 @@
 
 Letter::Letter(char c) : letter(c), guessed(false) {}
 
-void Letter::checkLetter(char c)
+void Letter::setLetter(char c)
 {
     if (c == letter)
         guessed = true;
