@@ -16,7 +16,7 @@ using std::string;
 class Word
 {
     public:
-    explicit Word(string randWord);
+    explicit Word(const string &);
         void setLetters(char c);
         string getLetters() const;
         string getWord() const;

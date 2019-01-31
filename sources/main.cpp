@@ -9,7 +9,7 @@
 #include "game.hpp"
 
 int main() {
-    Game game;
+    Game game(15); // Number of guesses
     game.play();
     return 0;
 }

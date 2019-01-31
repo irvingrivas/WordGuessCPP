@@ -8,7 +8,7 @@
 
 #include "word.hpp"
 
-Word::Word(string randWord) : word(randWord)
+Word::Word(const string &randWord) : word(randWord)
 {
     for (char l : word)
         letters.push_back(Letter(l));

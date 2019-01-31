@@ -20,7 +20,7 @@ using std::endl;
 class Game
 {
     public:
-    explicit Game();
+    explicit Game(const short int &);
         void play();
     protected:
         string getRandWord() const; // utility function

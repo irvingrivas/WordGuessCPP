@@ -8,7 +8,7 @@
 
 #include "game.hpp"
 
-Game::Game() : numGuesses(15) {}
+Game::Game(const short int &n) : numGuesses(n) {}
 
 void Game::play()
 {
