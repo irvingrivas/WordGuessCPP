@@ -30,7 +30,7 @@ void Game::play()
 }
 
 //kept outside of 'Game' to free up stack from holding 'words' while playing
-string Game::getRandWord()
+string Game::getRandWord() const
 {
     srand ( static_cast<unsigned int>(time(NULL)) ); // initialize the random seed
     vector<string> words = {"obama", "trump", "republican", "democrat", "donkey",

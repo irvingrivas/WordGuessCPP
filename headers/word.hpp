@@ -18,9 +18,9 @@ class Word
     public:
     explicit Word(string randWord);
         void checkLetters(char c);
-        string getLetters();
-        string getWord();
-        bool isGuessed();
+        string getLetters() const;
+        string getWord() const;
+        bool isGuessed() const;
     private:
         string word;
         vector<Letter> letters;

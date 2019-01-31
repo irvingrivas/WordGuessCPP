@@ -23,7 +23,7 @@ class Game
     explicit Game();
         void play();
     protected:
-        string getRandWord(); // utility function
+        string getRandWord() const; // utility function
     private:
         char guess;
         short int numGuesses;

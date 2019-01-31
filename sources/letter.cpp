@@ -16,7 +16,7 @@ void Letter::checkLetter(char c)
         guessed = true;
 }
 
-char Letter::getLetter()
+char Letter::getLetter() const
 {
     return guessed ? letter : '_';
 }

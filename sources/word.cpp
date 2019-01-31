@@ -14,7 +14,7 @@ Word::Word(string randWord) : word(randWord)
         letters.push_back(Letter(l));
 }
 
-string Word::getWord()
+string Word::getWord() const
 {
     return word;
 }
@@ -25,7 +25,7 @@ void Word::checkLetters(char c)
         l.checkLetter(c);
 }
 
-string Word::getLetters()
+string Word::getLetters() const
 {
     string tmp;
     for (auto& l : letters)
@@ -33,7 +33,7 @@ string Word::getLetters()
     return tmp;
 }
 
-bool Word::isGuessed()
+bool Word::isGuessed() const
 {
     return (word == getLetters()) ? true : false;
 }
