@@ -10,6 +10,5 @@
 
 int main() {
     Game game(15); // Number of guesses
-    game.play();
     return 0;
 }

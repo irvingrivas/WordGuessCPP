@@ -14,18 +14,14 @@ using std::cout;
 using std::cin;
 using std::endl;
 #include "word.hpp"
-#include <cstdlib>
-#include <ctime>
 
 class Game
 {
     public:
-    explicit Game(const short int &);
-        void play();
-    protected:
-        string getRandWord() const; // utility function
+        explicit Game(const short int &);
     private:
         char guess;
         short int numGuesses;
 };
+
 #endif /* game_hpp */

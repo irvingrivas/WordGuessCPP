@@ -13,11 +13,14 @@ using std::vector;
 #include<string>
 using std::string;
 #include "letter.hpp"
+#include <cstdlib>
+#include <ctime>
+
 class Word
 {
     public:
-    explicit Word(const string &);
-        void setLetters(char c);
+        explicit Word();
+        void checkLetters(char c);
         string getLetters() const;
         string getWord() const;
         bool isGuessed() const;
@@ -25,4 +28,5 @@ class Word
         string word;
         vector<Letter> letters;
 };
+
 #endif /* word_hpp */

@@ -12,8 +12,8 @@
 class Letter
 {
     public:
-    explicit Letter(const char &);
-        void setLetter(char c);
+        explicit Letter(const char &);
+        void checkLetter(char c);
         char getLetter() const;
     private:
         char letter;
