@@ -41,6 +41,6 @@ string Word::getLetters() const
 
 bool Word::isGuessed() const
 {
-    return (word == getLetters()) ? true : false;
+    return (word == getLetters());
 }
 
