@@ -13,7 +13,7 @@ Word::Word()
     vector<string> words = { "obama", "trump", "republican", "democrat", "donkey",
         "monkey", "computer", "commuter", "screensaver", "random", "anagram" };
     srand ( static_cast<unsigned int>(time(NULL)) ); // initialize the random seed
-    short int randIndex = rand() % words.size(); // generates a random index
+    short randIndex = rand() % words.size(); // generates a random index
     word = words[randIndex];
 
     for (char l : word)
@@ -27,14 +27,14 @@ string Word::getWord() const
 
 void Word::checkLetters(char c)
 {
-    for (char l : letters)
+    for (Letter l : letters)
         l.checkLetter(c);
 }
 
 string Word::getLetters() const
 {
     string tmp;
-    for (char l : letters)
+    for (Letter l : letters)
         tmp += l.getLetter();
     return tmp;
 }
