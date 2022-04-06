@@ -8,7 +8,7 @@
 
 #include "game.hpp"
 
-Game::Game(const short int &n) : numGuesses(n) 
+Game::Game(short n) : numGuesses(n) 
 {
     Word word;
     

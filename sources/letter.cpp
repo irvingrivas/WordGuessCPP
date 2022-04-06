@@ -8,7 +8,7 @@
 
 #include "letter.hpp"
 
-Letter::Letter(const char &c) : letter(c), guessed(false) {}
+Letter::Letter(char c) : letter(c), guessed(false) {}
 
 void Letter::checkLetter(char c)
 {

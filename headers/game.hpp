@@ -18,10 +18,10 @@ using std::endl;
 class Game
 {
     public:
-        explicit Game(const short int &);
+        explicit Game(short n);
     private:
         char guess;
-        short int numGuesses;
+        short numGuesses;
 };
 
 #endif /* game_hpp */
