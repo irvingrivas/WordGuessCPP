@@ -20,3 +20,8 @@ char Letter::getLetter() const
 {
     return guessed ? letter : '_';
 }
+
+bool Letter::isGuessed() const
+{
+    return guessed;
+}

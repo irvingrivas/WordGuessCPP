@@ -15,6 +15,7 @@ class Letter
         explicit Letter(char c);
         void checkLetter(char c);
         char getLetter() const;
+        bool isGuessed() const;
     private:
         char letter;
         bool guessed;
