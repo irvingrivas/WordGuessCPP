@@ -7,6 +7,7 @@
 //
 
 #include "word.hpp"
+#include <algorithm>
 
 Word::Word()
 {
@@ -41,6 +42,7 @@ string Word::getLetters() const
 
 bool Word::isGuessed() const
 {
-    return (word == getLetters());
+    return std::all_of(letters.cbegin(), letters.cend(),
+        [](const Letter& l) { return l.isGuessed(); });
 }
 
