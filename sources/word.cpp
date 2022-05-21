@@ -27,14 +27,14 @@ string Word::getWord() const
 
 void Word::checkLetters(char c)
 {
-    for (Letter l : letters)
+    for (Letter& l : letters)
         l.checkLetter(c);
 }
 
 string Word::getLetters() const
 {
     string tmp;
-    for (Letter l : letters)
+    for (const Letter& l : letters)
         tmp += l.getLetter();
     return tmp;
 }
